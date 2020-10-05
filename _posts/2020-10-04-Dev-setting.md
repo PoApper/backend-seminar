@@ -16,7 +16,7 @@ use_math: true
 
 -> [링크](https://opentutorials.org/course/3332/21029)
 
-설치 후, 다음의 명령어로 설치가 잘 되었는지 꼭 확인해주세요!!
+설치 후, 아래의 명령어로 설치가 잘 되었는지 꼭 확인해주세요!!
 
 ``` shell
 node -v
@@ -41,8 +41,7 @@ npm -v
 
 #### `VS Code` Extension 설치
 
-`Node.js` 코딩에 필수적인 또는 도움을 주는 VS Code의 Extension을 설치하도록 하겠습니다.
-
+`Node.js` 코딩에 필수적인 또는 도움을 주는 VS Code의 Extension을 설치해봅시다.
 
 ##### `Material Theme` (선택)
 VS Code에서의 코드 화면과 아이콘의 테마를 바꾸어주는 Extension 입니다.
@@ -70,7 +69,7 @@ VS Code에서의 코드 화면과 아이콘의 테마를 바꾸어주는 Extensi
 여러분이 백엔드 개발에 큰 열정을 가지고 있다면, 아래의 자료들을 추천해드리겠습니다.
 
 - [생활코딩: WEB2 - Node.js](https://opentutorials.org/course/3332)
-  - 개인적으로 생활코딩 egoing 님의 강좌를 정말 추천합니다. 저도 이 과정을 통해 `Node.js`의 기초를 다질 수 있었습니다 :)
+  - 개인적으로 생활코딩 egoing 님의 강좌를 정말 추천합니다. 저도 이 강좌를 통해 `Node.js`의 기초를 다질 수 있었습니다 :)
 - [Node.js 교과서(조현영 지음)](http://www.yes24.com/Product/Goods/62597864)
   - 인터넷 강좌보다는 교재를 선호하시는 분들은 이 교재를 추천드립니다. JS 아키텍처부터 데이터베이스까지의 범위를 다루면서, 설명이 자세한 편입니다.
 
