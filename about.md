@@ -8,6 +8,10 @@ permalink: /about/
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
+![](/assets/img/curriculum1.jpg)
+![](/assets/img/curriculum2.jpg)
+
+
 ### 세미나 운영 원칙
 - 세미나에서는 개발에 필요한 **최소한의 JS 문법**만 다룰 것입니다.
   - 지엽적인 내용은 저도 찾아봐야 해요 ㅠㅠ
