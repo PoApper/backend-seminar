@@ -1,7 +1,6 @@
 ---
 title: "개발환경 세팅"
 layout: post
-use_math: true
 ---
 
 ## 개발환경 세팅
