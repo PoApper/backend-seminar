@@ -172,7 +172,7 @@ let member = {
 }
 ```
 
-객체의 value에는 어떤 값이든 수용 가능합니다.
+객체의 value에는 어떤 값이든 담을 수 있습니다.
 
 ``` javascript
 let member = {
