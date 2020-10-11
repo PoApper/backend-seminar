@@ -3,6 +3,8 @@ title: "BackEnd Seminar 1"
 layout: post
 ---
 
+수업 영상 링크: [link](https://drive.google.com/file/d/1z1zMw7psF7QyYaSpmDLOVABKg-FaSjpz/view?usp=sharing)
+
 #### 수업의 키워드
 - 변수: `var` / `let` / `const`
 - 비교 연산자: `==` / `===`
