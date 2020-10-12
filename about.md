@@ -8,9 +8,13 @@ permalink: /about/
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
-![](/assets/img/curriculum1.jpg)
-![](/assets/img/curriculum2.jpg)
+- [출석 & HW](https://docs.google.com/spreadsheets/d/17nKCiFLQrrmfi_zuqvjivqmkdp7rOkSyluhAn0MI4Mg/edit?usp=sharing)
 
+### 세미나 S/U 정책
+- 수업 0.5 + 숙제 0.5 = 1 출석
+- 결석 3회부터 U 부여
+- 숙제 late 1회 가능
+- 기말과제까지 완료시 S 부여
 
 ### 세미나 운영 원칙
 - 세미나에서는 개발에 필요한 **최소한의 JS 문법**만 다룰 것입니다.
@@ -20,3 +24,6 @@ permalink: /about/
   - 수업 때는 게시된 내용을 기준으로 복습 & 질의응답을 하도록 하겠습니다.
 - 실력 향상은 실습에서 비롯됩니다.
   - 수업 마지막에 **숙제**를 공지하여 실습할 수 있도록 준비하겠습니다.
+
+![](/assets/img/curriculum1.jpg)
+![](/assets/img/curriculum2.jpg)
