@@ -225,7 +225,7 @@ JSON은 `.json` 확장자를 통해 별도의 파일로도 저장합니다.
     {"name": "Software Design", "id": "CSED332"},
     {"name": "Modern Algebra 1", "id": "MATH301"},
     {"name": "응용복소함수론", "id": "MATH210"},
-    {"name": "중영작", "id": "GEDU131"},
+    {"name": "중영작", "id": "GEDU131"}
   ]
 }
 ```
