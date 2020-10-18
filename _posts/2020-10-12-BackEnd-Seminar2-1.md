@@ -5,7 +5,7 @@ layout: post
 
 #### 수업의 키워드
 - 함수 (2)
-- Call back function
+- Callback function
 - 동기식 처리와 비동기식 처리
   - 비동기식 처리의 효용
   - 콜백 지옥(Callback hell)
