@@ -65,7 +65,7 @@ http.createServer((req, res) => {
 })
 ```
 
-`node`로 실행 후, `localhost:8080`에 접속하시면, 여러분의 첫 서버가 동작하는 것을 확인할 수 있습니다!!
+`node`로 실행 후, `localhost:8080`에 접속하시면 여러분의 첫 서버가 동작하는 것을 확인할 수 있습니다!!
 
 코드의 내용을 간단히 설명하면, 
 
@@ -142,6 +142,8 @@ server.on('error', (error) => {
 이제 작성한 html 파일을 활용해봅시다! `server`를 다음과 같이 변경합니다.
 
 ``` javascript
+const fs = require('fs');
+
 const server = http.createServer((req, res) => {
   fs.readFile('./home.html', (err, data) => {
     if(err) throw err
