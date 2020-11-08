@@ -138,13 +138,13 @@ Delete는 Create로 생성한 데이터의 값을 삭제할 때 쓰는 기능입
 예를 들어, `/read/[idx]`에서 존재하지 않는 인덱스의 원소에 접근하는 경우의 에러를 처리해줍시다.
 
 ``` javascript
-  else if(method == 'GET'){
-    if(url_parsed[1] == ''){ // 전체 조회
+  else if(method == 'read'){
+    if(url_parsed.length == 2){ // 전체 조회
       res.write(JSON.stringify(database));
     }else{ // 원소 조회
       try {
-        const url_idx = Number(url_parsed[1]);
-        res.write(database[url_idx]);
+      const url_idx = Number(url_parsed[2]);
+      res.write(database[url_idx]);
       } catch (error) {
         console.log("READ ERROR")
         console.log(error);
