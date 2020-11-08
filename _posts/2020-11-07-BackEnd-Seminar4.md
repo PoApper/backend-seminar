@@ -83,10 +83,10 @@ let idx = 1;
 다음 Read 입니다. 우리가 Create에서 저장한 값을 조회하기 위한 기능입니다. 
 
 Read의 경우 두 가지 형식을 지정하도록 하겠습니다.
-1. `localhost:8080/read/`
+1. `localhost:8080/read/`<br>
   `database`에 담긴 모든 정보를 조회합니다.
 
-2. `localhost:8080/read/[idx]`
+2. `localhost:8080/read/[idx]`<br>
   `idx`를 인덱스로 하는 데이터를 조회합니다.
 
 ``` javascript
@@ -116,7 +116,7 @@ Update는 Create로 생성한 데이터의 값을 바꿀 때 쓰는 기능입니
 ```
 
 #### CRUD: Delete
-Delete는 Create로 생성한 데이터의 값을 바꿀 때 쓰는 기능입니다. `localhost:8080/delete/[idx]`의 형식으로 접속하도록 하겠습니다.
+Delete는 Create로 생성한 데이터의 값을 삭제할 때 쓰는 기능입니다. `localhost:8080/delete/[idx]`의 형식으로 접속하도록 하겠습니다.
 
 ``` javascript
   else if(method == 'delete'){
@@ -127,13 +127,13 @@ Delete는 Create로 생성한 데이터의 값을 바꿀 때 쓰는 기능입니
 
 <hr>
 
-축하합니다!! 이제 여러분은 가장 기본적인 CRUD 기능을 구현하게 되었습니다!!
+축하합니다!! 이제 여러분은 가장 기본적인 CRUD 기능을 구현한 것입니다!
 
 그러나 진정한 CRUD를 위해 아직 남은 부분이 있습니다. 바로 Error Handling 입니다.
 
 #### CRUD: Error Handling
 
-웹개발에서 Error Handling은 아무리 강조해도 지나치지 않습니다 :) 우리가 구현한 로직에서 Error를 통해 서버를 셧다운 가능성이 있는 부분을 찾아내서 보완해봅시다!
+웹개발에서 Error Handling은 아무리 강조해도 지나치지 않습니다 :) 우리가 구현한 로직에서 Error를 통해 서버를 셧다운할 가능성이 있는 부분을 찾아내서 보완해봅시다!
 
 예를 들어, `/read/[idx]`에서 존재하지 않는 인덱스의 원소에 접근하는 경우의 에러를 처리해줍시다.
 
@@ -165,7 +165,7 @@ Delete는 Create로 생성한 데이터의 값을 바꿀 때 쓰는 기능입니
 
 앞의 과정에서 우리는 주소에 `create`, `read`, `update`, `delete`의 키워드를 이용해서 CRUD 기능을 수행하고 있습니다. 하지만 이 방식은 몇가지 문제점을 갖고 있습니다. 그리고 REST API를 사용하면 더 개선된 CRUD 기능을 활용할 수 있습니다.
 
-문제 상황을 생각해봅시다. CRUD 기능을 하는 키워드가 `create`, `read`, `update`, `delete`가 아니라 다른 키워드를 사용했다면, 개발자 입장에서 혼돈이 오기 쉽습니다. 우리는 데이터 생성에 `create` 키워드를 썼지만, 다른 개발자는 `save` 또는 `make` 키워드를 쓸 수도 있습니다. 또는 정말 이상한 `abcdefg`의 키워드로 주소 형식을 지정할 수도 있습니다. REST API는 CRUD 기능에 대한 표준 형식을 제시합니다.
+문제 상황을 생각해봅시다. CRUD에 대한 키워드로 `create`, `read`, `update`, `delete`가 아닌 다른 키워드를 사용했다면, 웹개발 과정에서 혼란스럽습니다. 우리는 데이터 생성에 `create` 키워드를 썼지만, 다른 개발자는 `save` 또는 `make` 키워드를 쓸 수도 있습니다. 또는 정말 이상한 `abcdefg`의 키워드로 주소 형식을 지정할 수도 있습니다. REST API는 CRUD 기능에 대한 표준 형식을 제시합니다.
 
 
 ### REST API란 무엇인가
@@ -259,7 +259,7 @@ HTTP Method에는 `GET`, `POST`, `PUT`, `DELETE`의 키워드가 있고 각각 C
 <hr>
 
 #### 참고자료
-- [[Network] REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html) <br> // REST API에 담긴 모든 패러다임을 담고 있는 포스트입니다. 꼭 읽어보시기를 추천 합니다!
+- [[Network] REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html) <br> // REST API의 모든 패러다임을 담고 있는 포스트입니다. 꼭 읽어보기를 추천 합니다!
 
 <hr>
 
