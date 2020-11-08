@@ -3,6 +3,8 @@ title: "BackEnd Seminar 4"
 layout: post
 ---
 
+수업 영상 링크: [link](https://drive.google.com/file/d/1Eu-u2t6kJGG2Y3ujBlgodeUVT65AakL9/view?usp=sharing)
+
 간단한 CRUD 기능을 구현해봅시다!
 
 #### 키워드
