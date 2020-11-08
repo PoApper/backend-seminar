@@ -143,8 +143,8 @@ Delete는 Create로 생성한 데이터의 값을 삭제할 때 쓰는 기능입
       res.write(JSON.stringify(database));
     }else{ // 원소 조회
       try {
-      const url_idx = Number(url_parsed[2]);
-      res.write(database[url_idx]);
+        const url_idx = Number(url_parsed[2]);
+        res.write(database[url_idx]);
       } catch (error) {
         console.log("READ ERROR")
         console.log(error);
