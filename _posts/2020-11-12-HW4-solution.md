@@ -58,11 +58,11 @@ try {
   }
 ```
 
-`POST` method일 때, 실제 사용하는 것은 `url_parsed`의 1번째 원소까지입니다. 하지만 만약 request가 `POST /1/more/input`과 같다면 이것은 부가적인 `/more/input`이라는 정보를 때문에 우리가 설계한 서버의 맥락과 조금 어긋나게 됩니다.
+`POST` method일 때, 실제 사용하는 것은 `url_parsed`의 1번째 원소까지입니다. 하지만 만약 request가 `POST /1/more/input`과 같다면 이것은 부가적인 `/more/input`라는 정보를 포함하기 때문에 우리가 설계한 서버의 맥락과 어긋나게 됩니다.
 
-또한,  request가 `POST /1/more/input`라면, 사실 입력하려던 주소는 `POST /more/input`인데 실수로 주소를 잘못 입력한 경우일 수도 있습니다. 만약 그렇다면 `database`에 값이 추가되어, 유저가 의도하는 것과는 다른 상황이 펼쳐질 수 있습니다.
+또한 request가 `POST /1/more/input`라면, 유저가 입력하려던 주소는 `POST /more/input`인데 실수로 주소를 잘못 입력한 경우일 수도 있습니다. 만약 그렇다면 지금의 코드에선 `database`에 값이 추가되어, 유저가 의도하는 것과는 다른 상황이 펼쳐질 수 있습니다.
 
-그래서 우리는 정직한 형태의 입력만 허용해주도록, (강제로) Error/Exception을 만드는 로직을 추가해줘야 합니니다.
+그래서 우리는 정직한 형태의 입력만 허용하도록, (강제로) Error/Exception을 만드는 로직을 추가해줘야 합니다.
 
 <br>
 
