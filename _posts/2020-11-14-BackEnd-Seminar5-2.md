@@ -10,6 +10,8 @@ layout: post
 
 <hr>
 
+수업 영상 링크: [link](https://drive.google.com/file/d/1tldByNY3GyIaF5_9qnt9McxQB5_8E7_d/view?usp=sharing)
+
 ### 도입말
 저번 수업을 통해 원시적인 형태의 데이터베이스를 구현하고, 이와 함께 REST API를 익혔습니다.
 
