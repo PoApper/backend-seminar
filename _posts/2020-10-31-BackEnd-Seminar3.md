@@ -219,7 +219,7 @@ const server = http.createServer((req, res) => {
 <hr>
 
 #### 참고자료
-- Node.js 교과서(조현영 지음)
+- [Node.js 교과서(조현영 지음)](http://www.yes24.com/Product/Goods/62597864)
 
 <hr>
 
