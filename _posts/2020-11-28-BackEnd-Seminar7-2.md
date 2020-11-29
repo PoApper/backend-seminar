@@ -3,6 +3,9 @@ title: "BackEnd Seminar 7-2"
 layout: post
 ---
 
+
+수업 영상 링크: [link](https://drive.google.com/file/d/17vo5MUorJTEUzborP2_5uRm4IeNDkBIm/view?usp=sharing)
+
 #### 키워드
 - Hello Cookie!
 - Cookie + `Express`
