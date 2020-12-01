@@ -4,7 +4,8 @@ layout: post
 ---
 
 
-수업 영상 링크: [link](https://drive.google.com/file/d/17vo5MUorJTEUzborP2_5uRm4IeNDkBIm/view?usp=sharing)
+수업 영상 링크: [link](https://drive.google.com/file/d/17vo5MUorJTEUzborP2_5uRm4IeNDkBIm/view?usp=sharing) <br>
+(제가 녹화를 깜빡해서 처음 10분 정도가 녹화되어 있지 않습니다 ㅠㅠ 죄송합니다 ㅠㅠ)
 
 #### 키워드
 - Hello Cookie!
