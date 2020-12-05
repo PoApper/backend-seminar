@@ -262,7 +262,7 @@ app.get('/secret', (req, res) => {
 
 이를 통해 로그인한 사용자만 특정 경로에 접근해 html 파일을 확인할 수 있도록 제어하는 기능을 구현하였습니다!
 
-전체 코드는 [이곳]에서 확인하실 수 있습니다!
+전체 코드는 [이곳](https://github.com/BlueHorn07/poapper-backend/blob/master/assets/example/login.zip)에서 확인하실 수 있습니다!
 
 <hr>
 
