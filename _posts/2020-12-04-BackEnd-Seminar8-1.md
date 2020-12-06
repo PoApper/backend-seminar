@@ -3,6 +3,8 @@ title: "BackEnd Seminar 8-1"
 layout: post
 ---
 
+수업 영상 링크: [link](https://drive.google.com/file/d/1Ytk_-ejt61oTLePUXxT1pXAY5pJ_Jmc1/view?usp=sharing) <br>
+
 #### 키워드
 - 로그인으로 페이지 접근 제어
 
