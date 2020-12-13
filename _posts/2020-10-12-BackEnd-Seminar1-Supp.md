@@ -40,7 +40,7 @@ JS 코드의 끝에 꼭 세미콜론을 써야할까요? 사실 세미콜론을 
 그러나 JS 코딩에 기본 규칙은 문장의 끝에 세미콜론을 작성하는 것 입니다. 다음의 예시를 통해 세미콜론 없이 코딩하는 것이 어떤 부작용을 일으키는지 살펴봅시다.
 
 <div style="text-align: center; margin: 5px;">
-<img src="/_site/assets/img/JS_semicolon.png"  style="width: 90%;">
+<img src="{{site.url}}/assets/img/JS_semicolon.png"  style="width: 90%;">
 </div>
 
 결론을 내리면, 세미콜론을 굳이 넣지 않아도 됩니다. 다만, 좀더 명확한 코드가 필요할 때는 세미콜론을 넣어줍시다!
