@@ -118,7 +118,7 @@ apt install nodejs
 #### VS Code로 Vultr 인스턴스 접속
 
 <div style="text-align: center;">
-  <img src="{{site.url}}/poapper-backend/assets/img/vultr/vultr_5.png" style="width:80%;">
+  <img src="{{site.url}}/poapper-backend/assets/img/vultr/vultr_5.PNG" style="width:80%;">
 </div><br>
 
 VS Code의 Extension 탭에서 `Remote - SSH` Extension을 설치합니다.
