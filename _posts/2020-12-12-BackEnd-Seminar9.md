@@ -3,6 +3,8 @@ title: "BackEnd Seminar 9"
 layout: post
 ---
 
+수업 영상 링크: [link](https://drive.google.com/file/d/1Yh5XtcLhMsAeYlKhFHwsmrTY3PDtHroY/view?usp=sharing) <br>
+
 이 포스트는 기록을 위해 작성하는 포스트입니다. 본 세미나 때는 직접 시연해드릴 예정입니다!
 
 #### 키워드
