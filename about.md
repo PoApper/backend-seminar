@@ -8,8 +8,6 @@ permalink: /about/
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
-- [출석 & HW](https://docs.google.com/spreadsheets/d/17nKCiFLQrrmfi_zuqvjivqmkdp7rOkSyluhAn0MI4Mg/edit?usp=sharing)
-
 ### 세미나 S/U 정책
 - 수업 0.5 + 숙제 0.5 = 1 출석
 - 결석 3회부터 U 부여

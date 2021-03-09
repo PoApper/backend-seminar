@@ -112,7 +112,9 @@ request의 body를 통해 들어오는 데이터를 읽을 수 있게 하는 코
 
 API Tester를 통해 입력은 다음과 같이 줍니다.
 
-![POST_body]({{"/assets/img/backend_seminar5_1.png"| relative_url}})
+<div style="text-align: center; margin: 5px;">
+<img src="{{"/assets/img/backend_seminar5_1.png" | relative_url}}"  style="width: 90%;">
+</div>
 
 그리고 출력 결과를 확인해보면, `body`에 넣은 값이 잘 출력되는 것을 확인할 수 있습니다!
 
