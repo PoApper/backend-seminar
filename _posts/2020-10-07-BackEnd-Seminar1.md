@@ -2,6 +2,7 @@
 title: "BackEnd Seminar 1"
 layout: post
 date: 20210322
+published: false
 ---
 
 수업 영상 링크: [link](https://drive.google.com/file/d/1z1zMw7psF7QyYaSpmDLOVABKg-FaSjpz/view?usp=sharing)

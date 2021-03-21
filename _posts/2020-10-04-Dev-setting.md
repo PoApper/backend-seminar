@@ -2,6 +2,7 @@
 title: "개발환경 세팅"
 layout: post
 date: 20210321
+published: true
 ---
 
 ## 개발환경 세팅
