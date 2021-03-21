@@ -8,8 +8,8 @@ published: true
 <!-- 수업 영상 링크: [link](https://drive.google.com/file/d/1z1zMw7psF7QyYaSpmDLOVABKg-FaSjpz/view?usp=sharing) -->
 
 #### 수업의 키워드
-- 데이터 타입: `기본 데이터 타입` / `참조 데이터 타입`
 - 변수: `var` / `let` / `const`
+- 데이터 타입: `기본 데이터 타입` / `참조 데이터 타입`
 - 비교 연산자: `==` / `===`
 - 배열 & 반복문
 - 함수 ★
@@ -37,33 +37,8 @@ node Hello
 
 <hr>
 
-## 데이터 타입
-`1 === 1.0`의 결과는 `True`입니다. C언어에서는 정수인 `1`과 실수인 `1.0`이 다른 타입이었지만, JS에서는 정수와 실수를 아울러 `Number`라는 타입으로 관리합니다.
-
-JS에서는 **기본 데이터 타입**[^1]<small>primitive type</small>과 **참조 데이터 타입**<small>reference type</small>, 두 가지로 나뉩니다.
-
-기본 데이터 타입에는 `Number`, `String`, `Boolean`, `undefined`, `null`이 있습니다. 그리고 참조 데이터 타입에는 `Object`를 포함하여 `Array`, `Function` 등이 있습니다.
-
-기본 데이터 타입은 변수에 저장할 때나 함수에 전달할 때, 데이터 값 자체가 복사됩니다. 반면에 참조 데이터 타입은 데이터의 참조(reference)가 전달됩니다. 예제를 통해 살펴봅시다.
-
-``` javascript
-var x = 100;        // 원시 타입 데이터를 선언
-var y = x;          // 값을 새 변수에 복사
-x = 99;             // 'x'의 값을 변경
-console.log(y);     // 100, 'y'의 값은 변경되지 않음
-```
-
-``` javascript
-var x = { count: 100 };   // 참조 타입 데이터를 선언
-var y = x;              // 참조를 새 변수에 복사
-x.count=99;             // 참조 타입 데이터를 변경
-console.log(y.count);   // 99, 'x'와 'y'는 동일한 참조를 담고 있으며, 따라서 동일한 객체를 가리킴
-```
-
-<hr>
-
 ## 변수
-JavaScript에서는 `var`, `let`, `const` 키워드를 사용해 변수를 선언할 수 있습니다. Javascript에서는 변수를 선언할 때 미리 타입을 지정해 주지 않고, 변수에 할당된 값의 타입에 의해 동적으로 할당됩니다. 이를 `동적 타이핑(Dynamic Typing)`이라 부르며, 추후에 변수의 타입변환에 대해 다루어 볼 예정입니다.
+JavaScript에서는 `var`, `let`, `const` 키워드를 사용해 변수를 선언할 수 있습니다. Javascript에서는 변수를 선언할 때 미리 타입을 지정해 주지 않고, 변수에 할당된 값의 타입에 의해 동적으로 할당됩니다. 이를 **동적 타이핑**<small>Dynamic Typing</small>이라 부르며, 추후에 다루어 볼 예정입니다.
 
 ``` javascript
 var v1;
@@ -111,6 +86,31 @@ name = "this is another variable"; // 오류!
 ```
 
 `const`는 값을 **재할당하는 것**도 불가능합니다.
+
+<hr>
+
+## 데이터 타입
+`1 === 1.0`의 결과는 `True`입니다. C언어에서는 정수인 `1`과 실수인 `1.0`이 다른 타입이었지만, JS에서는 정수와 실수를 아울러 `Number`라는 타입으로 관리합니다.
+
+JS에서는 **기본 데이터 타입**[^1]<small>primitive type</small>과 **참조 데이터 타입**<small>reference type</small>, 두 가지로 나뉩니다.
+
+기본 데이터 타입에는 `Number`, `String`, `Boolean`, `undefined`, `null`이 있습니다. 그리고 참조 데이터 타입에는 `Object`를 포함하여 `Array`, `Function` 등이 있습니다.
+
+기본 데이터 타입은 변수에 저장할 때나 함수에 전달할 때, 데이터 값 자체가 복사됩니다. 반면에 참조 데이터 타입은 데이터의 참조(reference)가 전달됩니다. 예제를 통해 살펴봅시다.
+
+``` javascript
+var x = 100;        // 원시 타입 데이터를 선언
+var y = x;          // 값을 새 변수에 복사
+x = 99;             // 'x'의 값을 변경
+console.log(y);     // 100, 'y'의 값은 변경되지 않음
+```
+
+``` javascript
+var x = { count: 100 };   // 참조 타입 데이터를 선언
+var y = x;              // 참조를 새 변수에 복사
+x.count=99;             // 참조 타입 데이터를 변경
+console.log(y.count);   // 99, 'x'와 'y'는 동일한 참조를 담고 있으며, 따라서 동일한 객체를 가리킴
+```
 
 <hr>
 
