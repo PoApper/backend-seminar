@@ -24,7 +24,10 @@ permalink: /about/
 - 실력 향상은 실습에서 비롯됩니다.
   - 수업 마지막에 **숙제**를 공지하여 실습할 수 있도록 준비하겠습니다.
 
+_special thanks to BlueHorn07_
+
+
+
 ![](/assets/img/curriculum1.png)
 ![](/assets/img/curriculum2.png)
 
-_special thanks to BlueHorn07_
