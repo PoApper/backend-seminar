@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-2020-Fall 백엔드 세미나를 위해 만든 지킬 블로그 입니다.
+2021-Spring 백엔드 세미나를 위해 만든 지킬 블로그 입니다.
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
 ### 세미나 S/U 정책
 - 수업 0.5 + 숙제 0.5 = 1 출석
+  - 수업에 참여하기 어려운 경우를 고려하여 녹화본을 업로드할 예정이고, 숙제까지 제출완료한 경우 출석인정을 하게 됩니다.
 - 결석 3회부터 U 부여
 - 숙제 late 1회 가능
 - 기말과제까지 완료시 S 부여
@@ -23,5 +24,7 @@ permalink: /about/
 - 실력 향상은 실습에서 비롯됩니다.
   - 수업 마지막에 **숙제**를 공지하여 실습할 수 있도록 준비하겠습니다.
 
-![](/assets/img/curriculum1.jpg)
-![](/assets/img/curriculum2.jpg)
+![](/assets/img/curriculum1.png)
+![](/assets/img/curriculum2.png)
+
+_special thanks to BlueHorn07_
