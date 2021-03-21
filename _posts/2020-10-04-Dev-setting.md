@@ -57,7 +57,7 @@ VS Code에서의 코드 화면과 아이콘의 테마를 바꾸어주는 Extensi
 
 `JavaScript`와 `Node.js`는 '거의' 동일한 언어입니다. 다만, 어떤 환경에서 실행하느냐에 따라 `JavaScript` / `Node.js`로 불리게 됩니다.
 
-`JavaScript`는 **브라우저(browser)**가 `.js` 파일을 실행시킵니다. 반면에 `Node.js`는 **node**라는 녀석이 `.js` 파일을 실행시킵니다.
+`JavaScript`는 **브라우저(browser)** 가 `.js` 파일을 실행시킵니다. 반면에 `Node.js`는 **node**라는 녀석이 `.js` 파일을 실행시킵니다.
 
 역사적으로는 `JavaScript`가 1995년 웹브라우저에 처음 탑재되었고, 2009년 `JavaScript`를 윈도우/Mac과 같은 일반적인 환경에서도 작동할 수 있도록 만든 것이 `Node.js`입니다.[^2]
 
@@ -73,6 +73,8 @@ VS Code에서의 코드 화면과 아이콘의 테마를 바꾸어주는 Extensi
   - 개인적으로 생활코딩 egoing 님의 강좌를 정말 추천합니다. 저도 이 강좌를 통해 `Node.js`의 기초를 다질 수 있었습니다 :)
 - [Node.js 교과서(조현영 지음)](http://www.yes24.com/Product/Goods/62597864)
   - 인터넷 강좌보다는 교재를 선호하시는 분들은 이 교재를 추천드립니다. JS 아키텍처부터 데이터베이스까지의 범위를 다루면서, 설명이 잘 되어 있습니다!
+- [웹 프로그래밍 튜토리얼(PoiemaWeb): Javascript, Node.js, Express](https://poiemaweb.com/)
+  - 백엔드 뿐만 아니라 프론트엔드를 포함한 웹개발 전반에 관한 문법적이고 세부적인 정보들이 잘 정리되어 있습니다. Javascript를 포함한 언어를 더욱 구체적으로 공부하고 싶은 분들께 추천드립니다!
 
 <br>
 
