@@ -1,6 +1,7 @@
 ---
 title: "BackEnd Seminar - 최종 과제"
 layout: post
+published: false
 ---
 
 <br>
