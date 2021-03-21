@@ -2,12 +2,13 @@
 title: "BackEnd Seminar 1"
 layout: post
 date: 20210322
-published: false
+published: true
 ---
 
-수업 영상 링크: [link](https://drive.google.com/file/d/1z1zMw7psF7QyYaSpmDLOVABKg-FaSjpz/view?usp=sharing)
+<!-- 수업 영상 링크: [link](https://drive.google.com/file/d/1z1zMw7psF7QyYaSpmDLOVABKg-FaSjpz/view?usp=sharing) -->
 
 #### 수업의 키워드
+- 데이터 타입: `기본 데이터 타입` / `참조 데이터 타입`
 - 변수: `var` / `let` / `const`
 - 비교 연산자: `==` / `===`
 - 배열 & 반복문
@@ -36,8 +37,33 @@ node Hello
 
 <hr>
 
+## 데이터 타입
+`1 === 1.0`의 결과는 `True`입니다. C언어에서는 정수인 `1`과 실수인 `1.0`이 다른 타입이었지만, JS에서는 정수와 실수를 아울러 `Number`라는 타입으로 관리합니다.
+
+JS에서는 **기본 데이터 타입**[^1]<small>primitive type</small>과 **참조 데이터 타입**<small>reference type</small>, 두 가지로 나뉩니다.
+
+기본 데이터 타입에는 `Number`, `String`, `Boolean`, `undefined`, `null`이 있습니다. 그리고 참조 데이터 타입에는 `Object`를 포함하여 `Array`, `Function` 등이 있습니다.
+
+기본 데이터 타입은 변수에 저장할 때나 함수에 전달할 때, 데이터 값 자체가 복사됩니다. 반면에 참조 데이터 타입은 데이터의 참조(reference)가 전달됩니다. 예제를 통해 살펴봅시다.
+
+``` javascript
+var x = 100;        // 원시 타입 데이터를 선언
+var y = x;          // 값을 새 변수에 복사
+x = 99;             // 'x'의 값을 변경
+console.log(y);     // 100, 'y'의 값은 변경되지 않음
+```
+
+``` javascript
+var x = { count: 100 };   // 참조 타입 데이터를 선언
+var y = x;              // 참조를 새 변수에 복사
+x.count=99;             // 참조 타입 데이터를 변경
+console.log(y.count);   // 99, 'x'와 'y'는 동일한 참조를 담고 있으며, 따라서 동일한 객체를 가리킴
+```
+
+<hr>
+
 ## 변수
-JavaScript에서는 `var`, `let`, `const` 키워드를 사용해 변수를 선언할 수 있습니다.
+JavaScript에서는 `var`, `let`, `const` 키워드를 사용해 변수를 선언할 수 있습니다. Javascript에서는 변수를 선언할 때 미리 타입을 지정해 주지 않고, 변수에 할당된 값의 타입에 의해 동적으로 할당됩니다. 이를 `동적 타이핑(Dynamic Typing)`이라 부르며, 추후에 변수의 타입변환에 대해 다루어 볼 예정입니다.
 
 ``` javascript
 var v1;
@@ -152,7 +178,7 @@ let square = function(number) {
 }
 ```
 
-이런 방식을 **함수 표현식(Function expression)**이라고 합니다. 용어 자체는 중요하지 않지만, 함수를 변수에 담을 수 있다는 개념은 정말 중요합니다!!
+이런 방식을 **함수 표현식(Function expression)** 이라고 합니다. 용어 자체는 중요하지 않지만, 함수를 변수에 담을 수 있다는 개념은 정말 중요합니다!!
 
 ``` javascript
 let sqaure_side = 5;
@@ -164,9 +190,9 @@ let square_area = square(square_side);
 ## 객체
 JS는 객체(Object) 기반의 언어입니다. JS를 이루는 거의 모든 것이 '객체'이기 때문에 여러분은 이미 객체를 사용하고 있습니다만, 좀더 자세히 알아봅시다!
 
-**프로퍼티(property)**란 키(key)와 값(value)의 쌍입니다.
+**프로퍼티(property)** 란 키(key)와 값(value)의 쌍입니다.
 
-그리고 **객체(object)**는 이 프로퍼티의 집합입니다.
+그리고 **객체(object)** 는 이 프로퍼티의 집합입니다.
 
 ``` javascript
 let member = {
@@ -234,3 +260,6 @@ JSON은 `.json` 확장자를 통해 별도의 파일로도 저장합니다.
 
 서버는 프론트/유저와 상호작용할 때, JSON 형식에 따라 정보를 주고 받습니다.
 
+<hr>
+
+[^1]: "원시 타입"이라고도 합니다.
