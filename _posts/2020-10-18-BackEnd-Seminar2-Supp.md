@@ -1,6 +1,7 @@
 ---
 title: "BackEnd Seminar 2(보충)"
 layout: post
+published: false
 ---
 
 수업 영상 링크: [link](https://drive.google.com/file/d/1VBF0JgmH4BZcp7SJ49VcPsL-Ptkly1os/view?usp=sharing)

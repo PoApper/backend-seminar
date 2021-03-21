@@ -1,6 +1,7 @@
 ---
 title: "BackEnd Seminar 4"
 layout: post
+published: false
 ---
 
 수업 영상 링크: [link](https://drive.google.com/file/d/1Eu-u2t6kJGG2Y3ujBlgodeUVT65AakL9/view?usp=sharing)

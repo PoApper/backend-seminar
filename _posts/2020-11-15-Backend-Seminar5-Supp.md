@@ -1,6 +1,7 @@
 ---
 title: "BackEnd Seminar 5(보충)"
 layout: post
+published: false
 ---
 
 * 키워드
