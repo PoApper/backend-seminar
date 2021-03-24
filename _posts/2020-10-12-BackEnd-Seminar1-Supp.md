@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 1(보충)"
 layout: post
 date: 20210325
-published: false
+published: true
 ---
 
 #### 키워드
