@@ -1,11 +1,13 @@
 ---
 title: "BackEnd Seminar 2-1"
 layout: post
-published: false
+date: 20210328
+published: true
 ---
 
 #### 수업의 키워드
 - 함수 (2)
+- 호이스팅
 - Callback function
 - 동기식 처리와 비동기식 처리
   - 비동기식 처리의 효용
@@ -32,6 +34,70 @@ var square = (num) => {
 함수를 선언할 때, `=>`를 사용하기 때문에 이런 함수를 **화살표 함수<small>arrow function</small>**이라고 합니다.
 
 코딩의 간편함 때문에 많은 경우 화살표 함수로 JS 함수를 선언합니다. 앞으로 이어지는 내용에선 화살표 함수를 위주로 함수를 작성하도록 하겠습니다!
+
+<hr>
+
+### 호이스팅
+**호이스팅**<small>Hoisting</small>이란 코드 내의 **선언문**을 **유효범위**의 최상단으로 끌어올리는 것을 말합니다. 다음 예시를 통해 살펴봅시다.
+
+```javascript
+let sqaure_side = 5;
+let square_area = square(square_side);
+
+function square(number) {
+  return number * number;
+}
+```
+`square`함수는 **함수 선언문**으로 작성되었기 때문에 코드가 실행될 때 호이스팅이 일어나 위와 같이 코드를 작성하여도 오류없이 작동합니다. 
+
+<br>
+
+**변수의 호이스팅**은 JS의 변수 생성 단계를 살펴보면 호이스팅을 이해하기 좋습니다.
+
+1. 선언 단계: 변수 객체에 변수를 등록
+2. 초기화 단계: 변수 객체에 등록된 변수를 메모리에 할당 ->  `undefined`로 초기화
+3. 할당 단게: `undefined`로 초기화된 변수에 값을 할당
+
+`var`의 경우 1, 2단계가 함께 일어나기 때문에 다음과 같은 상황이 발생할 수 있습니다.
+```javascript
+console.log(x);     //undefined
+console.log(y);     //Cannot access 'y' before initialization
+console.log(z);     //Cannot access 'z' before initialization
+
+var x = 'var';
+let y = 'let';
+const z = 'const';
+```
+함수 호이스팅에서는 함수 선언문만 호이스팅이 되었지만, 변수의 경우 `var`와 `let`, `const` 모두 호이스팅이 됩니다. 하지만 `let`과 `const`는 선언과 동시에 할당되지 **않기** 때문에 `var`에서만 호이스팅이 일어난다 착각하기 쉽습니다.
+
+```javascript
+x = 'var';
+console.log(x);     //var
+var x;
+```
+`var`의 경우 선언과 동시에 초기화되기 때문에 함수 호이스팅과 유사하게 사용될 수 있습니다.
+
+<br>
+
+앞서 **유효범위**를 강조하였는데, [보충 포스트]({{site.baseurl}}/2021/03/25/BackEnd-Seminar1-Supp.html)의 `JavaScript의 Scope` 부분을 읽어보면 JS는 함수 레벨 스코프를 가짐을 알 수 있습니다. `var`를 이용한 호이스팅이 일어났을 때의 발생할 수 있는 예상치 못한 상황을 살펴보도록 하겠습니다.
+```javascript
+for(var i = 0; i < 10; i++){
+
+}
+console.log(i)    //10
+```
+위와 같은 결과가 나타나는 이유는 호이스팅에 의해 다음과 같은 모양으로 인식되기 때문입니다.
+```javascript
+var i;
+for(i = 0; i < 10; i++){
+
+}
+console.log(i)    //10
+```
+
+<br>
+
+호이스팅이 편리해 보이지만, 코드가 복잡해 질수록 코드의 흐름이 꼬일 수 있기 때문에, `var`나 `함수 선언식`을 사용하게 될 경우 가급적 **코드의 상단부**에 선언을 하고, `let`나 `const`를 사용하여 혼선을 방지하는 것이 좋습니다.
 
 <hr>
 
@@ -163,11 +229,12 @@ $.get('url', function(response) {
 
 콜백 지옥은 코드의 로직을 이해하는 데에 큰 어려움을 줍니다. 
 
-비동기 처리의 부작용인 콜백 지옥을 해결하기 위해 JS에서는 `Promise`와 `async/await` 두 가지 방법을 제공합니다. 이번주 수업(10/18) 때 `Promise`에 대해서 다루도록 하겠습니다 :)
+비동기 처리의 부작용인 콜백 지옥을 해결하기 위해 JS에서는 `Promise`와 `async/await` 두 가지 방법을 제공합니다. 이번주 수업 때 `Promise`에 대해서 다루도록 하겠습니다 :)
 
 <hr>
 
 #### 참고자료
+- https://poiemaweb.com/js-data-type-variable
 - https://poiemaweb.com/js-async
 - https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
 

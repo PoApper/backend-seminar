@@ -1,7 +1,8 @@
 ---
 title: "BackEnd Seminar 2-2"
 layout: post
-published: false
+date: 20210328
+published: true
 ---
 
 #### 수업의 키워드
@@ -80,7 +81,6 @@ console.log(myProfileJSON.name);
 
 <hr>
 
-<br>
 
 이것으로 서버를 개발하기 위해 꼭 필요한 JS 문법은 다 살펴보았습니다. 다음 수업부터는 Node.js의 `express` 라이브러리를 통해서 직접 서버를 만들어보도록 하겠습니다 :)
 
