@@ -7,6 +7,8 @@ published: false
 수업 영상 링크: [link](https://drive.google.com/file/d/1VBF0JgmH4BZcp7SJ49VcPsL-Ptkly1os/view?usp=sharing)
 
 #### 키워드
+- 호이스팅이 발생하는 이유
+- 비동기 처리의 실행 순서
 - `Promise`
   - pending
   - fulfilled
