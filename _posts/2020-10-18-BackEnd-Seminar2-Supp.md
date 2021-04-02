@@ -40,7 +40,7 @@ JS의 호이스팅을 접하였을 때 왜 호이스팅이 발생하는지 그 �
 JS는 이벤트 루프를 통해 동시성을 가지는데, 다음과 같은 브라우저 환경을 가지게 됩니다.
 
 <div style="text-align: center; margin: 5px;">
-<img src="../assets/img/event-loop.png"  style="width: 70%;">
+<img src="https://poiemaweb.com/img/event-loop.png"  style="width: 70%;">
 </div>
 
 > - Heap: 동적으로 할당된 객체를 저장
