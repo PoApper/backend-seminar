@@ -1,10 +1,9 @@
 ---
 title: "BackEnd Seminar 2(보충)"
 layout: post
-published: false
+date: 20210403
+published: true
 ---
-
-수업 영상 링크: [link](https://drive.google.com/file/d/1VBF0JgmH4BZcp7SJ49VcPsL-Ptkly1os/view?usp=sharing)
 
 #### 키워드
 - 호이스팅이 발생하는 이유
@@ -17,6 +16,58 @@ published: false
 - 맺음말
 
 **Tip**: 이번 주제는 아직 잘 와닿지 않을 수 있습니다. 처음에는 JS에선 `Promise`란 녀석을 사용하고, `Promise`만 어떤 특징이 있다 정도만 파악하시면 됩니다. `Promise`는 서버를 프로그래밍 할 때 다른 개념과 결합하여 자주 사용되기 때문에 지금 잘 이해가 되지 않더라도, 이후에 현실적인 예제와 코드를 보면 익숙해질 것 입니다 :)
+
+<hr>
+
+### 호이스팅이 발생하는 이유
+JS의 호이스팅을 접하였을 때 왜 호이스팅이 발생하는지 그 이유에 대해 궁금이 생기실 수 있는데요, 이는 JS 코드의 실행 순서와 관련이 있습니다. JS는 코드가 실행되면 **코드를 파싱**하게 되는데, 이 때 **코드의 재정렬**이 일어나 변수와 함수의 선언문이 최상단으로 끌어올려집니다.(호이스팅)
+
+여기서 `파싱`이란 컴파일과 유사한 개념인데, 이전까지 다루었던 C나 C++과는 다르게 JS는 코드를 한줄씩 실행하는 **인터프리터 언어**이기에 컴파일보다는 파싱이라는 용어가 더 적합합니다.
+
+<br>
+
+#### 참고자료
+- [JavaScript 스코프와 호이스팅](https://tutorialpost.apptilus.com/code/posts/js/js19-scope/)
+- [JavaScript의 Parsing](https://multifrontgarden.tistory.com/62)
+
+
+<hr>
+
+### 비동기 처리의 실행 순서
+비동기 처리 방식에서 코드 실행 순서를 이해하려면, **이벤트 루프**<small>Event-Loop</small>에 대해 이해를 할 필요가 있습니다. 더 자세한 내용은 참고자료를 읽어주시면 좋습니다.
+
+<br>
+JS는 이벤트 루프를 통해 동시성을 가지는데, 다음과 같은 브라우저 환경을 가지게 됩니다.
+
+<div style="text-align: center; margin: 5px;">
+<img src="../assets/img/event-loop.png"  style="width: 70%;">
+</div>
+
+> - Heap: 동적으로 할당된 객체를 저장
+> - Call stack: 작업이 요청되면 순차적으로 Call stack에 쌓이고, 실행된다
+> - Event Queue: 비동기 처리 함수의 콜백 함수, 비동기식 이벤트 핸들러, Timer 함수(setTimeout(), setInterval())의 콜백 함수가 보관되는 곳. Call stack이 비면 순차적으로 실행된다
+> - Web API: Call stack에서 비동기 함수나 Timer 함수 등의 호출이 있을 때 Web API로 이동하여 비동기/Timer를 기다린 후 Event Queue로 이동한다
+
+Web API에서 Event Queue로 이동할 때에는 **Web API에 들어온 순서에 관계없이** 해당 함수가 완료되는 즉시 Event Queue로 이동합니다.
+
+여기서 주목해야 할 점은 비동기 함수나 Timer 함수가 Call stack으로 이동하여 실행될 때 반드시 **Call stack이 비어**있어야 한다는 것입니다. 따라서 만약 timer를 3초를 기다리게 하고 싶어도 이벤트 루프에 의해 완벽히 3초 후에 실행이 되지 않을 수도 있습니다.  
+
+예를 들어 다음과 같은 코드를 실행한다고 해 봅시다.
+```javascript
+func1();
+func2();
+Timer();
+func3();
+```
+우선 func1과 func2, Timer()가 차례로 Call stack에 쌓입니다. 이때 Timer()같은 경우에는 비동기 처리가 일어나 Call stack에서 빠져나와 Web API로 이동하여 지정된 시간만큼 기다리게 됩니다. 지정된 시간이 지난 후에는 Event Queue로 이동합니다. func3까지 Call stack에 쌓인 후 차례로 func1, func2, func3를 실행하고 Call stack이 비었을 때 Event Queue에서 Timer가 Call stack으로 넘어와 실행됩니다.
+
+<br>
+
+#### 참고자료
+
+- [동기식 처리 모델 vs 비동기식 처리 모델](https://poiemaweb.com/js-async)
+- [이벤트](https://poiemaweb.com/js-event)
+- [Event Loop](https://velog.io/@yejinh/Event-Loop-d4k4llote8)
 
 <hr>
 
@@ -215,11 +266,7 @@ new Promise((resolve) => {
 
 그래서 JS는 `async`/`await` 키워드를 통해서 비동기 함수를 처리하는 새로운 방법을 제시합니다. `async`/`await` 키워드는 중간고사 이후의 수업에서 다루도록 하겠습니다!
 
-<hr>
+<br>
 
 #### 참고자료
 - [자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
-
-
-<hr>
-
