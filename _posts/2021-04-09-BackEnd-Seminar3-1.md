@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 3-1"
 layout: post
 date: 20210412
-published: false
+published: true
 ---
 
 #### 키워드

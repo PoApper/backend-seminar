@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 3-2"
 layout: post
 date: 20210413
-published: false
+published: true
 ---
 
 이제부터 Node.js를 통해 본격적으로 서버를 만들게 됩니다!!
