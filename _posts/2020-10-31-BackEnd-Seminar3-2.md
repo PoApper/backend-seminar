@@ -1,11 +1,9 @@
 ---
-title: "BackEnd Seminar 3"
+title: "BackEnd Seminar 3-2"
 layout: post
+date: 20210413
 published: false
 ---
-
-수업 영상 링크: [link](https://drive.google.com/file/d/1qBr6WAbIk7RVTSK13s7uDA_pT8YuCqm0/view?usp=sharing)
-
 
 이제부터 Node.js를 통해 본격적으로 서버를 만들게 됩니다!!
 
