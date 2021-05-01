@@ -1,7 +1,7 @@
 ---
 title: "MySQL 설치"
 layout: post
-date: 20210429
+date: 20210501
 published: true
 ---
 
