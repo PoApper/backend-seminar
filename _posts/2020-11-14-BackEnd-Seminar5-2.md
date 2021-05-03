@@ -112,7 +112,7 @@ request의 body를 통해 들어오는 데이터를 읽을 수 있게 하는 코
 
 API Tester를 통해 BODY에 다음과 같은 내용을 담은 `POST` method를 보내줍니다.
 
-```JSON
+```
 {
   "title": "The Selfish Gene",
   "author": "Richard Dawkins"
