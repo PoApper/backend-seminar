@@ -1,7 +1,8 @@
 ---
 title: "BackEnd Seminar 5"
 layout: post
-published: false
+date: 20210503
+published: true
 ---
 
 #### 키워드
@@ -10,8 +11,6 @@ published: false
 - `mysql` 모듈
 
 <hr>
-
-수업 영상 링크: [link](https://drive.google.com/file/d/1tldByNY3GyIaF5_9qnt9McxQB5_8E7_d/view?usp=sharing)
 
 ### 도입말
 저번 수업을 통해 원시적인 형태의 데이터베이스를 구현하고, 이와 함께 REST API를 익혔습니다.
@@ -113,9 +112,7 @@ request의 body를 통해 들어오는 데이터를 읽을 수 있게 하는 코
 
 API Tester를 통해 입력은 다음과 같이 줍니다.
 
-<div style="text-align: center; margin: 5px;">
-<img src="{{"/assets/img/backend_seminar5_1.png" | relative_url}}"  style="width: 90%;">
-</div>
+![](/assets/img/backend_seminar5_1.png)
 
 그리고 출력 결과를 확인해보면, `body`에 넣은 값이 잘 출력되는 것을 확인할 수 있습니다!
 
