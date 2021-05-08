@@ -1,7 +1,8 @@
 ---
 title: "BackEnd Seminar 6"
 layout: post
-published: false
+date: 20210508
+published: true
 ---
 
 #### 키워드
@@ -15,7 +16,7 @@ published: false
 ### 도입말
 이전의 강의를 통해 `MySQL` 데이터베이스를 사용하는 서버를 만들 수 있었습니다! 하지만 `http` 모듈을 통해 만든 서버는, 서버가 거대해지고 처리할 URL과 구현할 기능들이 많아지게 되면 코드가 점점 더 복잡해지고, 코드 가독성이 떨어지게 됩니다. 
 
-`express` 라이브러리를 `if-else` 처리하던 많은 것들을 함수로 처리할 수 있게 만들어 줍니다.
+`express` 라이브러리는 `if-else` 처리하던 많은 것들을 함수로 처리할 수 있게 만들어 줍니다.
 
 예를 들어, `GET`, `POST` method를 처리할 때 이전에는
 
