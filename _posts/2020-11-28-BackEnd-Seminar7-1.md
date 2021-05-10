@@ -1,7 +1,8 @@
 ---
 title: "BackEnd Seminar 7-1"
 layout: post
-published: false
+date: 20210511
+published: true
 ---
 
 #### 키워드
@@ -39,9 +40,13 @@ node book_express
 
 `request` 모듈을 사용해 API 서버에 접속하는 코드를 작성해봅시다!
 
-먼저 `request.js` 이름의 파일을 생성합니다.
+우선 `npm install`을 통해 `request`모듈을 설치해줍니다.
 
-그리고 `npm install request`를 통해서 `request` 모듈을 설치해줍니다.
+```bash
+npm install request
+```
+
+그리고 `request.js` 이름의 파일을 생성합니다.
 
 #### 3. 코드 작성
 

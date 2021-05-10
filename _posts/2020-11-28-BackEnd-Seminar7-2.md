@@ -1,12 +1,9 @@
 ---
 title: "BackEnd Seminar 7-2"
 layout: post
-published: false
+date: 20210511
+published: true
 ---
-
-
-수업 영상 링크: [link](https://drive.google.com/file/d/17vo5MUorJTEUzborP2_5uRm4IeNDkBIm/view?usp=sharing) <br>
-(제가 녹화를 깜빡해서 처음 10분 정도가 녹화되어 있지 않습니다 ㅠㅠ 죄송합니다 ㅠㅠ)
 
 #### 키워드
 - Hello Cookie!
@@ -27,6 +24,7 @@ published: false
 러닝 타임은 **30분** 정도입니다!
 
 #### '쿠키'란?
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/i51xW3eh-T4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 쿠키 생성
@@ -45,6 +43,7 @@ http.createServer((req, res) => {
 ```
 
 #### 쿠키 조회
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CfR1H9z-lSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 코드로 정리하면 아래와 같습니다.
