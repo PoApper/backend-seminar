@@ -1,7 +1,8 @@
 ---
 title: "BackEnd Seminar 5(보충)"
 layout: post
-published: false
+date: 20210513
+published: true
 ---
 
 * 키워드
