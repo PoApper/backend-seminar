@@ -1,12 +1,12 @@
 ---
 title: "BackEnd Seminar 9"
 layout: post
-published: false
+date: 20210603
+published: true
 ---
 
 수업 영상 링크: [link](https://drive.google.com/file/d/1Yh5XtcLhMsAeYlKhFHwsmrTY3PDtHroY/view?usp=sharing) <br>
 
-이 포스트는 기록을 위해 작성하는 포스트입니다. 본 세미나 때는 직접 시연해드릴 예정입니다!
 
 #### 키워드
 - 호스팅(hosting)
@@ -53,9 +53,8 @@ Vultr는 2가지 형태의 결제 방식을 제공합니다.
 
 #### 인스턴스(Instance) 생성
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_1.png" | relative_url}}"  style="width: 80%;">
-</div><br>
+![](./assets/img/vultr/../../../../assets/img/vultr/vultr_1.png)
+
 
 로그인 후에 `Products` 탭으로 이동합니다.
 
@@ -63,9 +62,7 @@ Vultr는 2가지 형태의 결제 방식을 제공합니다.
 
 <br>
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_2.png" | relative_url}}" style="width:80%;">
-</div><br>
+![](./assets/img/vulter/../../../../assets/img/vultr/vultr_2.png)
 
 - `Server Location`은 `Seoul`로 선택
 - `Server Type`은 `Ubuntu 20.04 x64`로 선택
@@ -77,17 +74,13 @@ Vultr는 2가지 형태의 결제 방식을 제공합니다.
 
 #### 콘솔창에 접속해 로그인
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_3.png" | relative_url}}" style="width:80%;">
-</div>
+![](./assets/img/../../../assets/img/vultr/vultr_3.png)
 
 `View Console`로 인스턴스의 콘솔창을 열어줍니다.
 
 처음 콘솔을 열게 되면, Vultr 인스턴스에 로그인을 해야 합니다.
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_4.png" | relative_url}}" style="width:80%;">
-</div>
+![](./assets/img/../../../assets/img/vultr/vultr_4.png)
 
 위에 기재된 로그인 정보를 이용하시면 됩니다.
 
@@ -120,9 +113,7 @@ apt install nodejs
 
 #### VS Code로 Vultr 인스턴스 접속
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_5.PNG" | relative_url}}" style="width:80%;">
-</div><br>
+![](./assets/img/../../../assets/img/vultr/vultr_5.png)
 
 VS Code의 Extension 탭에서 `Remote - SSH` Extension을 설치합니다.
 
@@ -132,9 +123,7 @@ VS Code의 Extension 탭에서 `Remote - SSH` Extension을 설치합니다.
 
 그러면 `SSH`로 접속할 호스트(Host)를 입력하라는 창이 실행됩니다. 여기에 여러분이 만든 Vultr 인스턴스의 `IP Address`와 함께 다음과 같이 입력해줍니다.
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_6.png" | relative_url}}" style="width:80%;">
-</div><br>
+![](./assets/img/../../../assets/img/vultr/vultr_6.png)
 
 그러면, 새로운 VS Code 창이 뜨면서, 몇가지 창이 등장합니다.
 
@@ -150,9 +139,7 @@ VS Code의 Extension 탭에서 `Remote - SSH` Extension을 설치합니다.
 
 <br>
 
-<div style="text-align: center;">
-  <img src="{{"/assets/img/vultr/vultr_7.png" | relative_url}}" style="width:80%;">
-</div><br>
+![](assets/img/../../../assets/img/vultr/vultr_7.png)
 
 그러면 위와 같은 화면과 함께 VS Code를 통해 Vultr 인스턴스에 원격접속하게 된 것입니다!! >.< 여기서 작업한 것들이 모두 Vultr 인스턴스에도 그대로 반영됩니다 ㅎㅎ
 
