@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-2021-Spring 백엔드 세미나를 위해 만든 지킬 블로그 입니다.
+포에퍼 백엔드 세미나를 위해 만들어진 지킬 블로그 입니다.
+<br>
+(사용 학기 : 2020-fall, 2021-spring, 2021-fall)
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
@@ -24,10 +26,9 @@ permalink: /about/
 - 실력 향상은 실습에서 비롯됩니다.
   - 수업 마지막에 **숙제**를 공지하여 실습할 수 있도록 준비하겠습니다.
 
-![](/assets/img/curriculum1.png)
-![](/assets/img/curriculum2.png)
+![](/assets/img/2021-fall-curriculum.png)
 
 <br>
 <hr>
 
-_special thanks to BlueHorn07_
+_special thanks to BlueHorn07, Jeongwon Choi_
