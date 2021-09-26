@@ -2,7 +2,7 @@
 title: "BackEnd Seminar를 마무리하며"
 layout: post
 date: 20210603
-published: true
+published: false
 ---
 
 안녕하세요! 이번학기 세미나 담당을 한 18 컴공 최정원입니다. :smile:
