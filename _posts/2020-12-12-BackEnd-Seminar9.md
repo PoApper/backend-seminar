@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 9"
 layout: post
 date: 20210603
-published: true
+published: false
 ---
 
 수업 영상 링크: [link](https://drive.google.com/file/d/1Yh5XtcLhMsAeYlKhFHwsmrTY3PDtHroY/view?usp=sharing) <br>

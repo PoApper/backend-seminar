@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 4"
 layout: post
 date: 20210426
-published: true
+published: false
 ---
 
 간단한 CRUD 기능을 구현해봅시다!

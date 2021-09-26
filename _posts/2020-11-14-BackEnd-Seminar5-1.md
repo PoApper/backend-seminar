@@ -2,7 +2,7 @@
 title: "MySQL 설치"
 layout: post
 date: 20210501
-published: true
+published: false
 ---
 
 서버에 데이터베이스를 연결하기 위해 컴퓨터에 `MySQL` 데이터베이스를 설치해봅시다.

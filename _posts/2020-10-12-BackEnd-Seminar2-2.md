@@ -2,7 +2,7 @@
 title: "BackEnd Seminar 2-2"
 layout: post
 date: 20210328
-published: true
+published: false
 ---
 
 #### 수업의 키워드
