@@ -5,7 +5,6 @@ date: 20210322
 published: true
 ---
 
-수업 영상 링크: [link](https://drive.google.com/file/d/1yb4VyIm4VSgiXCne5TE1ZSFRFLudVlCw/view?usp=sharing)
 
 #### 수업의 키워드
 - 변수: `var` / `let` / `const`
