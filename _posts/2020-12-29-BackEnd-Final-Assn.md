@@ -2,7 +2,7 @@
 title: "BackEnd Seminar - 최종 과제"
 layout: post
 date: 20210621
-published: true
+published: false
 ---
 
 <br>
