@@ -1,7 +1,4 @@
-title: BackEnd 세미나(2021-SPRING)
-author:
-  name: bluehorn07
-  email: bluehornblues@gmail.com
+title: BackEnd 세미나(2021-FALL)
 description: > # this means to ignore newlines until "show_excerpts:"
   “Talk is cheap. Show me the code.” - Linus Torvalds
 
@@ -10,7 +7,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%b %-d, %Y"
+  date_format: "%Y.%m.%d"
 
   # generate social links in footer
   social_links:

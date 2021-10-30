@@ -6,7 +6,7 @@ permalink: /about/
 
 포에퍼 백엔드 세미나를 위해 만들어진 지킬 블로그 입니다.
 <br>
-(사용 학기 : 2020-fall, 2021-spring, 2021-fall)
+(2020-fall, 2021-spring, 2021-fall)
 
 궁금한 점이 있다면, 언제든지 질문해주세요! 여러분의 질문을 환영합니다 :)
 
@@ -31,4 +31,4 @@ permalink: /about/
 <br>
 <hr>
 
-_special thanks to BlueHorn07, Jeongwon Choi_
+_special thanks to [BlueHorn07](https://github.com/BlueHorn07), [Jeongwon Choi](https://github.com/jjeongone)_
