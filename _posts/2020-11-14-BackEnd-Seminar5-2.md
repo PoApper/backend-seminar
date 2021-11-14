@@ -1,8 +1,8 @@
 ---
 title: "BackEnd Seminar 5"
 layout: post
-date: 20210503
-published: false
+date: 20211114
+published: true
 ---
 
 #### 키워드
@@ -23,9 +23,9 @@ published: false
 
 서버에 MySQL을 도입하기 전에, 먼저 MySQL의 명령어인 SQL 명령어를 익혀봅시다!
 
-// 본 포스트에서 MySQL의 기초 명령어를 모두 다루려고 했으나, 제가 글을 작성해보니 글이 마음에 들지 않았습니다 ㅠㅠ.
+// 본 포스트에서 MySQL의 기초 명령어를 모두 다루기는 어려우니, 자세한 내용은 아래 링크를 참조해서 공부하세요!
 
-// 그래서 생활코딩의 egoing 님이 강의하신 MySQL 도입 영상으로 이 부분을 대체하고자 합니다!
+// SQL 명령어를 모두 외우려하기 보다는 어떻게 사용되는지 그 패러다임 정도만 익히고, 그때 그때 명령어를 찾아서 사용할 수 있는 수준만 되어도 무방하다고 생각합니다.
 
 [생활코딩/egoing - MySQL](https://opentutorials.org/course/3161/19531)
 
@@ -39,6 +39,17 @@ MySQL을 빠르게 배우는 것보다, 조금 느리더라도 MySQL과 데이�
 
 <hr>
 
+### MySQL 기초 구조
+
+MySQL은 데이터 베이스 서버 하나에 여러 개의 데이터 베이스가 있고, 그 데이터 베이스 안에 여러 개의 표(table)이 있는 형태를 가지고 있습니다.
+<img src="https://media.vlpt.us/images/onejaejae/post/9ea60265-3767-42fa-8e8d-8ba1db3b9276/mysql.PNG"  style="width: 100%;">
+
+한 데이터 베이스안에는 공통된 목적의 프로그램을 처리하기 위한 데이터가 들어있고, 한 table안에는 같은 종류의 데이터가 들어있습니다. 예를들어 Poapper backend seminar에 관한 데이터를 저장한다고 할 때, Poapper backend seminar라는 이름의 데이터 베이스에 해당 데이터들을 저장할 수 있습니다. 그리고 그 데이터 베이스 안에는 수강생에 관한 table이나 포스트에 관한 table 같이 여러가지 table이 있을 수 있습니다.
+
+table은 위의 그림과 같이 row와 column으로 나눠서 볼 수 있는데, row는 한 data에 대해 여러 가지 property를 나열한 것이고, column은 한 property에 대해 여러가지 data들의 값을 나열한 것입니다.
+
+<hr>
+
 #### `poapper_backend` 데이터베이스 생성
 
 수업에서 사용할 `poapper_backend` 데이터베이스를 만들어주세요!
@@ -48,7 +59,9 @@ CREATE DATABASE poapper_backend;
 USE poapper_backend;
 ```
 
-수업에서 사용할 테이블을 생성합니다.
+여기서 CREATE DATABASE를 통해 데이터 베이스를 만들 수 있고, USE poapper_Backend를 통해 생성한 데이터 베이스에 접근할 수 있습니다. 어떤 table에 접근하기 위해서는 먼저 database에 USE 키워드를 사용해 접근해야 한다는 점을 기억해주세요!
+
+이제 수업에서 사용할 테이블을 생성해봅시다. TABLE에는 위에서 언급한 것 처럼, 한 종류의 데이터 (여기서는 book)가 들어 갑니다. book의 성질에는 id, title, author, created date등이 있을테니, 이를 기록해두는 것이 좋겠죠? 
 
 ``` bash
 CREATE TABLE books(
@@ -61,6 +74,8 @@ CREATE TABLE books(
 
 SHOW TABLES;
 ```
+
+또한, 데이터마다 고유하게 가지고 있는 Property가 필요한 경우가 많습니다. 예를들어 우리학교 학생을 구분할 수 있는 Property에는 학번이 있고, 이는 학생마다 고유하게 가지고 있는 property이니, 이를 통해 데이터를 구분할 수 있습니다. Mysql에서는 이렇게 데이터마다 고유하게 갖고있는 property를 지정해 주기 위해 PRIMARY KEY를 사용합니다. PRIMARY KEY로 지정된 Property의 경우, 중복된 값이 들어갈 수 없습니다.
 
 이제 book 테이블에 책 정보를 저장하는 서버를 개발해봅시다!
 
@@ -83,7 +98,6 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 ```
-
 #### request `body`
 
 하.지.만. 세부로직을 구현하기 전에 새롭게 도입할 테크닉이 하나 있습니다.
