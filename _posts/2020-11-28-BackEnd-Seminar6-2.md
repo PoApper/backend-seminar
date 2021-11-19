@@ -1,8 +1,8 @@
 ---
-title: "BackEnd Seminar 7-1"
+title: "BackEnd Seminar 6-2"
 layout: post
-date: 20210511
-published: false
+date: 20211119
+published: true
 ---
 
 #### 키워드
@@ -115,6 +115,7 @@ request({
 ```
 
 위와 같이 본인이 개발한 서버가 아닌 다른 사람의 서버에서 정보를 얻어 그것을 가공해볼 수도 있습니다 ㅎㅎ
+
 
 <hr>
 

@@ -1,8 +1,8 @@
 ---
-title: "BackEnd Seminar 6"
+title: "BackEnd Seminar 6-1"
 layout: post
-date: 20210508
-published: false
+date: 20211119
+published: true
 ---
 
 #### 키워드
@@ -92,7 +92,7 @@ app.listen(8080, () => console.log("server run on 8080 port."))
 
 ### `express` + CRUD 
 
-지난 [Seminar5]({{"/2020/11/14/BackEnd-Seminar5-2.html" | relative_url}})에서 구현한 전공책 CRUD를 진행하는 서버를 `express`를 통해 그대로 구현해봅시다!
+지난 세미나에서 구현한 전공책 CRUD를 진행하는 서버를 `express`를 통해 그대로 구현해봅시다!
 
 #### 베이스 코드
 먼저 `express`를 기반으로 아는 아래의 코드를 작성합니다.
