@@ -1,5 +1,5 @@
 ---
-title: "BackEnd Seminar 7-1"
+title: "BackEnd Seminar 7"
 layout: post
 date: 20211204
 published: true
