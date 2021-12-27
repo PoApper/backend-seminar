@@ -1,11 +1,11 @@
 ---
-title: "BackEnd Seminar 9"
+title: "BackEnd Seminar 8"
 layout: post
-date: 20210603
-published: false
+date: 20211226
+published: true
 ---
 
-수업 영상 링크: [link](https://drive.google.com/file/d/1Yh5XtcLhMsAeYlKhFHwsmrTY3PDtHroY/view?usp=sharing) <br>
+수업 영상 링크: [link]() <br>
 
 
 #### 키워드
