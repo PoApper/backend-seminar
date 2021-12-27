@@ -12,7 +12,7 @@ published: true
 <div style="font-size: large;" markdown="1">
 
 ■ **due date**<br>
-2021.01.16(일) 23:59:59<br>
+2022.01.16(일) 23:59:59<br>
 <small>(최종 과제를 제출해야 세미나 이수가 인정됩니다.)</small>
 
 </div>
