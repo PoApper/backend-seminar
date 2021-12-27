@@ -5,7 +5,7 @@ date: 20211226
 published: true
 ---
 
-수업 영상 링크: [link]() <br>
+수업 영상 링크: [link](https://drive.google.com/file/d/1CI4Lwj4211fLuVRCUM5_AEKmpQKHLhOV/view?usp=sharing) <br>
 
 
 #### 키워드
@@ -123,8 +123,9 @@ VS Code의 Extension 탭에서 `Remote - SSH` Extension을 설치합니다.
 
 그러면 `SSH`로 접속할 호스트(Host)를 입력하라는 창이 실행됩니다. 여기에 여러분이 만든 Vultr 인스턴스의 `IP Address`와 함께 다음과 같이 입력해줍니다.
 
-![](./assets/img/../../../assets/img/vultr/vultr_6.png)
-
+``` bash
+root@123.456.78.01 // 여러분 서버의 ip주소를 적으시면 됩니다.
+```
 그러면, 새로운 VS Code 창이 뜨면서, 몇가지 창이 등장합니다.
 
 각각 `Linux`와 `Save fingerprint`를 선택해줍니다.
