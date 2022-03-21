@@ -2,7 +2,7 @@
 title: "BackEnd Seminar를 마무리하며"
 layout: post
 date: 20211226
-published: true
+published: false
 ---
 
 <br>
