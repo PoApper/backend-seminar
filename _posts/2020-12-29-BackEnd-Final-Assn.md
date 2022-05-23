@@ -1,7 +1,7 @@
 ---
 title: "BackEnd Seminar - 최종 과제"
 layout: post
-date: 20211226
+date: 20220523
 published: true
 ---
 
@@ -12,7 +12,7 @@ published: true
 <div style="font-size: large;" markdown="1">
 
 ■ **due date**<br>
-2022.01.16(일) 23:59:59<br>
+2022.07.05(일) 23:59:59<br>
 <small>(최종 과제를 제출해야 세미나 이수가 인정됩니다.)</small>
 
 </div>
@@ -192,7 +192,7 @@ img {
 
 ### 채점 및 통과 기준
 
-과제 Due는 `2022.01.16(일) 23:59:59`이다. 
+과제 Due는 `2022.07.05(일) 23:59:59`이다. 
 
 완성된 서버와 프론트의 파일을 본인의 Github에 Backend_Final_Assignment의 이름으로 업로드한다.
 
